@@ -5,8 +5,8 @@ AddEventHandler('blacklist.checkForAdminPermissions', function()
     end
 end)
 
-PerformHttpRequest("https://essexinnovations.tk/vehicle-blacklist/version.txt", function(err, serverVersion, headers)
-    local version = "v0.0.7"
+PerformHttpRequest("https://github.com/BoZoUS/B-Blacklist/releases/tag/1.0.0", function(err, serverVersion, headers)
+    local version = "v1.0.0"
     if string.find(serverVersion, version) == nil then
         Wait(120)
         print("\n")
